@@ -1,255 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Verity Went's personal website">
-    <meta name="keywords" content="Verity, Went, portfolio, website">
-    <meta name="author" content="Verity Went">
-    <title>Verity Went</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        sand: '#d8d5b5',
-                        navy: '#000080',
-                    }
-                }
-            }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Verity Went's personal website" />
+  <meta name="keywords" content="Verity, Went, portfolio, website" />
+  <meta name="author" content="Verity Went" />
+  <title>Verity Went</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sand: '#d8d5b5',
+            navy: '#000080',
+          }
         }
-    </script>
+      }
+    }
+  </script>
 </head>
+
 <body class="bg-navy">
-    <!-- Navigation -->
-    <nav class="bg-sand sticky top-0 z-50 border-b-2 border-navy">
-        <div class="max-w-4xl mx-auto px-4 py-4">
-            <ul class="flex justify-center gap-8">
-                <li><a href="#home" class="text-gray-800 hover:text-navy font-medium transition">Home</a></li>
-                <li><a href="#about" class="text-gray-800 hover:text-navy font-medium transition">About</a></li>
-                <li><a href="#contact" class="text-gray-800 hover:text-navy font-medium transition">Contact</a></li>
-            </ul>
+  <!-- Navigation -->
+  <nav class="bg-sand/90 backdrop-blur sticky top-0 z-50 border-b border-navy/20">
+    <div class="max-w-4xl mx-auto px-4 py-4">
+      <ul class="flex justify-center gap-8">
+        <li>
+          <a href="#home"
+             class="text-gray-800 hover:text-navy font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/40 focus-visible:ring-offset-2 focus-visible:ring-offset-sand rounded-md px-2 py-1">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#about"
+             class="text-gray-800 hover:text-navy font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/40 focus-visible:ring-offset-2 focus-visible:ring-offset-sand rounded-md px-2 py-1">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#contact"
+             class="text-gray-800 hover:text-navy font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/40 focus-visible:ring-offset-2 focus-visible:ring-offset-sand rounded-md px-2 py-1">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="bg-sand md:my-8 md:rounded-3xl md:shadow-lg overflow-hidden">
+    <!-- Hero Section -->
+    <section id="home" class="relative w-full flex items-center justify-center px-4 py-20 scroll-mt-24">
+      <div class="max-w-4xl w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <img
+            src="images/image0.jpeg"
+            alt="Verity Went"
+            class="w-full h-auto rounded-2xl object-cover ring-1 ring-navy/10 shadow-sm"
+          />
+
+          <div>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4 pb-3 border-b-2 border-navy">
+              I am Verity Went
+            </h1>
+
+            <p class="text-gray-700 leading-7 max-w-prose">
+              Verity Went is a powerful and compelling speaker whose life changed overnight in a way few people could imagine.
+            </p>
+            <p class="text-gray-700 leading-7 max-w-prose mt-4">
+              A lifelong migraine sufferer from the age of eight, Verity had learned to live with pain and unpredictability.
+            </p>
+            <p class="text-gray-700 leading-7 max-w-prose mt-4">
+              What she could never have prepared for was waking up on 4 October 2023 with a completely different accent.
+            </p>
+          </div>
         </div>
-    </nav>
 
-    <!-- Main Content -->
-    <main class="bg-sand">
-        <!-- Hero Section -->
-        <section id="home" class="relative min-h-screen w-full flex items-center justify-center px-4">
-            <div class="max-w-4xl w-full">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <img src="images/image0.jpeg" alt="Verity Went" class="w-full h-auto rounded-lg object-cover border-2 border-navy/30">
-                    <div>
-                        <h1 class="text-4xl font-bold text-gray-900 mb-4 pb-3 border-b-3 border-navy">I am Verity Went</h1>
-                        <p class="text-gray-800 leading-relaxed">Verity Went is a powerful and compelling speaker whose life changed overnight in a way few people could imagine.</p>
-                        <p class="text-gray-800 leading-relaxed mt-4">A lifelong migraine sufferer from the age of eight, Verity had learned to live with pain and unpredictability.</p>
-                        <p class="text-gray-800 leading-relaxed mt-4">What she could never have prepared for was waking up on 4 October 2023 with a completely different accent.</p>
-                    </div>
-                </div>
+        <!-- Scroll indicator -->
+        <div class="flex justify-center mt-10">
+          <a href="#about"
+             aria-label="Scroll to About"
+             class="animate-bounce text-navy inline-flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/40 focus-visible:ring-offset-2 focus-visible:ring-offset-sand rounded-md px-2 py-2">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
 
-                <!-- Scroll indicator (placed directly under hero content) -->
-                <div class="flex justify-center mt-6">
-                    <a href="#about" aria-label="Scroll to About" class="animate-bounce text-navy inline-flex items-center">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+    <!-- About Section -->
+    <section id="about" class="w-full flex items-center justify-center px-4 py-20 scroll-mt-24">
+      <div class="max-w-4xl w-full">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-navy">About Verity</h2>
 
-        </section>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          <div>
+            <p class="text-gray-700 leading-7 max-w-prose mb-4">
+              Born and raised in the West Midlands, Verity suddenly found herself speaking with a Geordie accent — a rare neurological phenomenon later diagnosed as Functional Neurological Disorder (FND) and Foreign Accent Syndrome (FAS).
+            </p>
+            <p class="text-gray-700 leading-7 max-w-prose mb-4">
+              The experience was not only medically shocking but emotionally devastating, as many people initially believed she was faking it.
+            </p>
+          </div>
 
-        <!-- About Section -->
-        <section id="about" class="min-h-screen w-full flex items-center justify-center px-4">
-            <div class="max-w-4xl w-full">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-navy">About Verity</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                    <div>
-                        <p class="text-gray-800 leading-relaxed mb-4">Born and raised in the West Midlands, Verity suddenly found herself speaking with a Geordie accent — a rare neurological phenomenon later diagnosed as Functional Neurological Disorder (FND) and Foreign Accent Syndrome (FAS).</p>
-                        <p class="text-gray-800 leading-relaxed mb-4">The experience was not only medically shocking but emotionally devastating, as many people initially believed she was faking it.</p>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="images/image2.jpeg" alt="Verity's story" class="w-full h-auto rounded-lg object-cover border-2 border-navy/30" />
-                            <figcaption class="text-gray-700 text-sm mt-2 text-center">Verity's journey</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <p class="text-gray-800 leading-relaxed mt-6">Despite public scepticism, online abuse, and misunderstanding, Verity chose to speak out. Following appearances across national TV and radio, including ITV's This Morning and BBC Radio 2's Jeremy Vine Show, she has become an important voice in raising awareness of hidden neurological conditions and the realities of living with an invisible disability.</p>
-            </div>
-        </section>
-        <br>
+          <div>
+            <figure>
+              <img
+                src="images/image2.jpeg"
+                alt="Verity's story"
+                class="w-full h-auto rounded-2xl object-cover ring-1 ring-navy/10 shadow-sm"
+              />
+              <figcaption class="text-gray-600 text-sm mt-2 text-center">Verity's journey</figcaption>
+            </figure>
+          </div>
+        </div>
 
-        <!-- Speaking & Impact Section -->
-        <section id="speaking" class="min-h-screen w-full flex items-center justify-center px-4">
-            <div class="max-w-4xl w-full">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-navy">Speaking & Impact</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
-                    <div>
-                        <p class="text-gray-800 leading-relaxed mb-4">Verity's story resonates deeply with audiences. She speaks with honesty, warmth, and humor about resilience, identity, judgment, and finding strength when your life takes an unexpected turn.</p>
-                        <p class="text-gray-800 leading-relaxed">Her talks are consistently described as moving, eye-opening, and inspirational by attendees who find themselves profoundly moved by her candour and vulnerability.</p>
-                    </div>
-                    <div>
-                        <figure>
-                            <img src="images/image1.jpeg" alt="Verity speaking at an event" class="w-full h-auto rounded-lg object-cover border-2 border-navy/30" />
-                            <figcaption class="text-gray-700 text-sm mt-2 text-center">Speaking at events</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <div class="bg-gray-100 rounded-lg p-6 mb-8 border-l-4 border-navy">
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Demand & Availability</h3>
-                    <p class="text-gray-800 leading-relaxed">Verity is in high demand across the UK for keynote talks, conferences, community events, health forums, and education settings. She is also a popular guest on podcasts and vodcasts, where her authenticity and openness make for compelling conversation.</p>
-                </div>
-                <div>
-                    <figure>
-                        <img src="images/image3.jpeg" alt="Verity at an engagement" class="w-full h-auto rounded-lg object-cover border-2 border-navy/30" />
-                        <figcaption class="text-gray-700 text-sm mt-2 text-center">Making an impact</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <!-- Media & Recognition -->
-        <section id="media" class="min-h-screen w-full flex items-center justify-center px-4">
-            <div class="max-w-4xl w-full">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-navy">In The Media</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <figure>
-                        <img src="images/image4.jpeg" alt="Media appearances" class="w-full h-auto rounded-lg object-cover border-2 border-navy/30" />
-                        <figcaption class="text-gray-700 text-sm mt-2 text-center">Featured in major media</figcaption>
-                    </figure>
-                    <div>
-                        <p class="text-gray-800 leading-relaxed mb-4">Verity has appeared on some of the UK's most prominent television and radio shows, sharing her remarkable story with millions of viewers and listeners.</p>
-                        <p class="text-gray-800 leading-relaxed">Her appearances have sparked important conversations about neurological conditions, mental health, and resilience in the face of adversity.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-<section id="contact" class="min-h-screen w-full flex items-center justify-center px-4 py-16">
-  <div class="max-w-4xl w-full">
-    <h2 class="text-3xl font-bold text-gray-900 mb-4 pb-3 border-b-2 border-navy">Get In Touch</h2>
-    <p class="text-gray-800 leading-relaxed mb-8">
-      Interested in booking Verity for an event or collaboration? We’d love to hear from you.
-    </p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Left: little intro card -->
-      <div class="rounded-2xl border border-navy/15 bg-white/70 backdrop-blur p-6 shadow-sm">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">Booking & Enquiries</h3>
-        <p class="text-gray-700 leading-relaxed">
-          For speaking requests, media enquiries, or collaborations, please use the contact details here.
+        <p class="text-gray-700 leading-7 mt-8 max-w-prose">
+          Despite public scepticism, online abuse, and misunderstanding, Verity chose to speak out. Following appearances across national TV and radio, including ITV's This Morning and BBC Radio 2's Jeremy Vine Show, she has become an important voice in raising awareness of hidden neurological conditions and the realities of living with an invisible disability.
         </p>
+      </div>
+    </section>
 
-        <div class="mt-6 rounded-xl bg-sand/60 border border-navy/10 p-4">
-          <p class="text-sm text-gray-700">
-            Typical response time: <span class="font-medium text-gray-900">1–2 working days</span>
+    <!-- Speaking & Impact Section -->
+    <section id="speaking" class="w-full flex items-center justify-center px-4 py-20 scroll-mt-24">
+      <div class="max-w-4xl w-full">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-navy">Speaking & Impact</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+          <div>
+            <p class="text-gray-700 leading-7 max-w-prose mb-4">
+              Verity's story resonates deeply with audiences. She speaks with honesty, warmth, and humour about resilience, identity, judgement, and finding strength when your life takes an unexpected turn.
+            </p>
+            <p class="text-gray-700 leading-7 max-w-prose">
+              Her talks are consistently described as moving, eye-opening, and inspirational by attendees who find themselves profoundly moved by her candour and vulnerability.
+            </p>
+          </div>
+
+          <div>
+            <figure>
+              <img
+                src="images/image1.jpeg"
+                alt="Verity speaking at an event"
+                class="w-full h-auto rounded-2xl object-cover ring-1 ring-navy/10 shadow-sm"
+              />
+              <figcaption class="text-gray-600 text-sm mt-2 text-center">Speaking at events</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-navy/15 bg-white/70 backdrop-blur p-6 shadow-sm mb-10">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Demand & Availability</h3>
+          <p class="text-gray-700 leading-7 max-w-prose">
+            Verity is in high demand across the UK for keynote talks, conferences, community events, health forums, and education settings. She is also a popular guest on podcasts and vodcasts, where her authenticity and openness make for compelling conversation.
           </p>
         </div>
+
+        <figure>
+          <img
+            src="images/image3.jpeg"
+            alt="Verity at an engagement"
+            class="w-full h-auto rounded-2xl object-cover ring-1 ring-navy/10 shadow-sm"
+          />
+          <figcaption class="text-gray-600 text-sm mt-2 text-center">Making an impact</figcaption>
+        </figure>
       </div>
+    </section>
 
-      <!-- Right: contact methods -->
-      <div class="rounded-2xl border border-navy/15 bg-white/70 backdrop-blur p-6 shadow-sm">
-        <div class="space-y-3">
+    <!-- Media & Recognition -->
+    <section id="media" class="w-full flex items-center justify-center px-4 py-20 scroll-mt-24">
+      <div class="max-w-4xl w-full">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-navy">In The Media</h2>
 
-          <!-- Email row -->
-          <a
-            href="mailto:sylvia@tidymanagement.com"
-            class="group flex items-center justify-between gap-4 rounded-xl border border-navy/10 bg-white/60 p-4 hover:border-navy/25 hover:bg-white transition"
-          >
-            <div class="flex items-center gap-3">
-              <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-navy/5 border border-navy/10">
-                <!-- mail icon -->
-                <svg class="h-5 w-5 text-navy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 4h16v16H4z" opacity="0" />
-                  <path d="M4 8l8 5 8-5" />
-                  <path d="M4 6h16v12H4z" />
-                </svg>
-              </span>
-              <div>
-                <p class="text-xs tracking-wide text-gray-600 uppercase">Email</p>
-                <p class="text-gray-900 font-medium group-hover:underline">
-                  sylvia@tidymanagement.com
-                </p>
-              </div>
-            </div>
-            <span class="text-sm text-navy/70 group-hover:text-navy">Send</span>
-          </a>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <figure>
+            <img
+              src="images/image4.jpeg"
+              alt="Media appearances"
+              class="w-full h-auto rounded-2xl object-cover ring-1 ring-navy/10 shadow-sm"
+            />
+            <figcaption class="text-gray-600 text-sm mt-2 text-center">Featured in major media</figcaption>
+          </figure>
 
-          <!-- TikTok row -->
-          <a
-            href="https://www.tiktok.com/@veritywent7"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group flex items-center justify-between gap-4 rounded-xl border border-navy/10 bg-white/60 p-4 hover:border-navy/25 hover:bg-white transition"
-          >
-            <div class="flex items-center gap-3">
-              <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-navy/5 border border-navy/10">
-                <!-- your existing tiktok svg (smaller) -->
-                <svg class="h-5 w-5 text-navy" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true">
-                  <path d="M544.5 273.9C500.5 274 457.5 260.3 421.7 234.7L421.7 413.4C421.7 446.5 411.6 478.8 392.7 506C373.8 533.2 347.1 554 316.1 565.6C285.1 577.2 251.3 579.1 219.2 570.9C187.1 562.7 158.3 545 136.5 520.1C114.7 495.2 101.2 464.1 97.5 431.2C93.8 398.3 100.4 365.1 116.1 336C131.8 306.9 156.1 283.3 185.7 268.3C215.3 253.3 248.6 247.8 281.4 252.3L281.4 342.2C266.4 337.5 250.3 337.6 235.4 342.6C220.5 347.6 207.5 357.2 198.4 369.9C189.3 382.6 184.4 398 184.5 413.8C184.6 429.6 189.7 444.8 199 457.5C208.3 470.2 221.4 479.6 236.4 484.4C251.4 489.2 267.5 489.2 282.4 484.3C297.3 479.4 310.4 469.9 319.6 457.2C328.8 444.5 333.8 429.1 333.8 413.4L333.8 64L421.8 64C421.7 71.4 422.4 78.9 423.7 86.2C426.8 102.5 433.1 118.1 442.4 131.9C451.7 145.7 463.7 157.5 477.6 166.5C497.5 179.6 520.8 186.6 544.6 186.6L544.6 274z"/>
-                </svg>
-              </span>
-              <div>
-                <p class="text-xs tracking-wide text-gray-600 uppercase">TikTok</p>
-                <p class="text-gray-900 font-medium group-hover:underline">@veritywent7</p>
-              </div>
-            </div>
-            <span class="text-sm text-navy/70 group-hover:text-navy">Open</span>
-          </a>
-
-          <!-- Management row -->
-          <a
-            href="https://www.tidymanagement.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group flex items-center justify-between gap-4 rounded-xl border border-navy/10 bg-white/60 p-4 hover:border-navy/25 hover:bg-white transition"
-          >
-            <div class="flex items-center gap-3">
-              <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-navy/5 border border-navy/10">
-                <!-- briefcase icon -->
-                <svg class="h-5 w-5 text-navy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M10 6h4a2 2 0 0 1 2 2v1H8V8a2 2 0 0 1 2-2z"/>
-                  <path d="M4 9h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9z"/>
-                </svg>
-              </span>
-              <div>
-                <p class="text-xs tracking-wide text-gray-600 uppercase">Management</p>
-                <p class="text-gray-900 font-medium group-hover:underline">Tidy Management</p>
-              </div>
-            </div>
-            <span class="text-sm text-navy/70 group-hover:text-navy">Visit</span>
-          </a>
-
-        </div>
-
-        <!-- Optional CTA -->
-        <div class="mt-6">
-          <a
-            href="mailto:sylvia@tidymanagement.com?subject=Speaking%20Enquiry%20for%20Verity%20Went"
-            class="inline-flex w-full items-center justify-center rounded-xl bg-navy px-5 py-3 text-white font-medium hover:bg-navy/90 transition"
-          >
-            Email for availability
-          </a>
+          <div>
+            <p class="text-gray-700 leading-7 max-w-prose mb-4">
+              Verity has appeared on some of the UK's most prominent television and radio shows, sharing her remarkable story with millions of viewers and listeners.
+            </p>
+            <p class="text-gray-700 leading-7 max-w-prose">
+              Her appearances have sparked important conversations about neurological conditions, mental health, and resilience in the face of adversity.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-    </main>
+    <!-- Contact Section (upgraded) -->
+    <section id="contact" class="w-full flex items-center justify-center px-4 py-20 scroll-mt-24">
+      <div class="max-w-4xl w-full">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4 pb-3 border-b-2 border-navy">Get In Touch</h2>
+        <p class="text-gray-700 leading-7 mb-8 max-w-prose">
+          Interested in booking Verity for an event or collaboration? We’d love to hear from you.
+        </p>
 
-    <!-- Footer -->
-    <footer class="bg-navy text-white text-center py-8 mt-12">
-        <p>&copy; 2026 Verity Went. All rights reserved.</p>
-        <p>Website built by <a href="https://dankepinski.co.uk" target="_blank" rel="noopener noreferrer" class="text-white underline hover:text-sand">Daniel Kepinski</a></p>
-    </footer>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Left card -->
+          <div class="rounded-2xl border border-navy/15 bg-white/70 backdrop-blur p-6 shadow-sm">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Booking & Enquiries</h3>
+            <p class="text-gray-700 leading-7 max-w-prose">
+              For speaking requests, media enquiries, or collaborations, please use the contact details here.
+            </p>
 
-    <script>
-        // Add your JavaScript here
-        console.log('Website loaded successfully');
-    </script>
+            <div class="mt-6 rounded-xl bg-sand/60 border border-navy/10 p-4">
+              <p class="text-sm text-gray-700">
+                Typical response time: <span class="font-medium text-gray-900">1–2 working days</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Right card -->
+          <div class="rounded-2xl border border-navy/15 bg-white/70 backdrop-blur p-6 shadow-sm">
+            <div class="space-y-3">
+
+              <!-- Email -->
+              <a href="mailto:sylvia@tidymanagement.com"
+                 class="group flex items-center justify-between gap-4 rounded-xl border border-navy/10 bg-white/60 p-4 hover:border-navy/25 hover:bg-white transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/40 focus-visible:ring-offset-2 focus-visible:ring-offset-sand">
+                <div class="flex items-center gap-3">
+                  <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-navy/5 border border-navy/10">
+                    <svg class="h-5 w-5 text-navy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 6h16v12H4z" />
+                      <path d="M4 8l8 5 8-5" />
+                    </svg>
+                  </span>
+                  <div>
+                    <p class="text-xs tracking-wide text-gray-600 uppercase">Email</p>
+                    <p class="text-gray-900 font-medium group-hover:underline">
+                      sylvia@tidymanagement.com
+                    </p>
+                  </div>
+                </div>
+                <span class="text-sm text-navy/70 group-hover:text-navy">Send</span>
+              </a>
+
+              <!-- TikTok -->
+              <a href="https://www.tiktok.com/@veritywent7"
+                 target="_blank" rel="noopener noreferrer"
+                 class="group flex items-center justify-between gap-4 rounded-xl border border-navy/10 bg-white/60 p-4 hover:border-navy/25 hover:bg-white transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/40 focus-visible:ring-offset-2 focus-visible:ring-offset-sand">
+                <div class="flex items-center gap-3">
+                  <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-navy/5 border border-navy/10">
+                    <svg class="h-5 w-5 text-navy" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true">
+                      <path d="M544.5 273.9C500.5 274 457.5 260.3 421.7 234.7L421.7 413.4C421.7 446.5 411.6 478.8 392.7 506C373.8 533.2 347.1 554 316.1 565.6C285.1 577.2 251.3 579.1 219.2 570.9C187.1 562.7 158.3 545 136.5 520.1C114.7 495.2 101.2 464.1 97.5 431.2C93.8 398.3 100.4 365.1 116.1 336C131.8 306.9 156.1 283.3 185.7 268.3C215.3 253.3 248.6 247.8 281.4 252.3L281.4 342.2C266.4 337.5 250.3 337.6 235.4 342.6C220.5 347.6 207.5 357.2 198.4 369.9C189.3 382.6 184.4 398 184.5 413.8C184.6 429.6 189.7 444.8 199 457.5C208.3 470.2 221.4 479.6 236.4 484.4C251.4 489.2 267.5 489.2 282.4 484.3C297.3 479.4 310.4 469.9 319.6 457.2C328.8 444.5 333.8 429.1 333.8 413.4L333.8 64L421.8 64C421.7 71.4 422.4 78.9 423.7 86.2C426.8 102.5 433.1 118.1 442.4 131.9C451.7 145.7 463.7 157.5 477.6 166.5C497.5 179.6 520.8 186.6 544.6 186.6L544.6 274z"/>
+                    </svg>
+                  </span>
+                  <div>
+                    <p class="text-xs tracking-wide text-gray-600 uppercase">TikTok</p>
+                    <p class="text-gray-900 font-medium group-hover:underline">@veritywent7</p>
+                  </div>
+                </div>
+                <span class="text-sm text-navy/70 group-hover:text-navy">Open</span>
+              </a>
+
+              <!-- Management -->
+              <a href="https://www.tidymanagement.com"
+                 target="_blank" rel="noopener noreferrer"
+                 class="group flex items-center justify-between gap-4 rounded-xl border border-navy/10 bg-white/60 p-4 hover:border-navy/25 hover:bg-white transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/40 focus-visible:ring-offset-2 focus-visible:ring-offset-sand">
+                <div class="flex items-center gap-3">
+                  <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-navy/5 border border-navy/10">
+                    <svg class="h-5 w-5 text-navy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M10 6h4a2 2 0 0 1 2 2v1H8V8a2 2 0 0 1 2-2z"/>
+                      <path d="M4 9h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9z"/>
+                    </svg>
+                  </span>
+                  <div>
+                    <p class="text-xs tracking-wide text-gray-600 uppercase">Management</p>
+                    <p class="text-gray-900 font-medium group-hover:underline">Tidy Management</p>
+                  </div>
+                </div>
+                <span class="text-sm text-navy/70 group-hover:text-navy">Visit</span>
+              </a>
+
+            </div>
+
+            <div class="mt-6">
+              <a href="mailto:sylvia@tidymanagement.com?subject=Speaking%20Enquiry%20for%20Verity%20Went"
+                 class="inline-flex w-full items-center justify-center rounded-xl bg-navy px-5 py-3 text-white font-medium hover:bg-navy/90 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy/40 focus-visible:ring-offset-2 focus-visible:ring-offset-sand">
+                Email for availability
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-white text-center py-8 mt-12">
+    <p>&copy; 2026 Verity Went. All rights reserved.</p>
+    <p>
+      Website built by
+      <a href="https://dankepinski.co.uk" target="_blank" rel="noopener noreferrer"
+         class="text-white underline hover:text-sand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-navy rounded-md px-1">
+        Daniel Kepinski
+      </a>
+    </p>
+  </footer>
+
+  <script>
+    console.log('Website loaded successfully');
+  </script>
 </body>
 </html>
